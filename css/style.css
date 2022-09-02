@@ -114,4 +114,8 @@ body {
 	.car-card {
 		max-width: 300px;
 	}
+
+	.card-text {
+		margin-bottom: 5.5em;
+	}
 }
