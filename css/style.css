@@ -1,0 +1,117 @@
+:root {
+	--sedans: hsl(31, 77%, 52%);
+	--suvs: hsl(184, 100%, 22%);
+	--luxury: hsl(179, 100%, 13%);
+	--white: hsl(0, 0%, 100%);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: hsl(0, 0%, 95%);
+	color: #fff;
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 15px;
+}
+
+/* --------------------- */
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+/* --------------------- */
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5em 1.3em;
+}
+
+.three-column-card {
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.car-card {
+	padding: 3em;
+	max-width: 320px;
+}
+
+.one {
+	background-color: var(--sedans);
+}
+
+.two {
+	background-color: var(--suvs);
+}
+
+.three {
+	background-color: var(--luxury);
+}
+
+.card-img {
+	width: 58px;
+}
+
+.card-title {
+	margin: 0.7em 0;
+	font-family: 'Big Shoulders Display', cursive;
+	font-size: 4rem;
+	text-transform: uppercase;
+}
+
+.card-text {
+	margin-bottom: 2em;
+	line-height: 22px;
+}
+
+.card-btn {
+	padding: 1em 2.5em;
+	border-radius: 25px;
+	border: 2px solid transparent;
+	font-weight: bold;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.card-btn:hover {
+	background-color: transparent;
+	color: var(--white);
+	border: 2px solid var(--white);
+}
+
+.btn-sedans {
+	color: var(--sedans);
+}
+.btn-suvs {
+	color: var(--suvs);
+}
+.btn-luxury {
+	color: var(--luxury);
+}
+
+@media (min-width: 1048px) {
+	.container {
+		min-height: 100vh;
+	}
+	.three-column-card {
+		display: flex;
+		align-items: center;
+	}
+
+	.car-card {
+		max-width: 300px;
+	}
+}
