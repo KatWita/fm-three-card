@@ -117,5 +117,6 @@ body {
 
 	.card-text {
 		margin-bottom: 5.5em;
+		line-height: 24px;
 	}
 }
